@@ -1,136 +1,166 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy — Sage</title>
-    <style>
-      :root {
-        --bg: #0f0d0a;
-        --text: #e9e1d3;
-        --muted: #b7aa94;
-        --accent: #b8975a;
-        --surface: #171410;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-        line-height: 1.65;
-      }
-      .shell { min-height: 100vh; display: flex; flex-direction: column; }
-      .site-header, .site-footer {
-        width: min(100%, 1100px);
-        margin: 0 auto;
-        padding: 1.1rem 1.25rem;
-      }
-      .brand {
-        text-decoration: none;
-        color: var(--accent);
-        font-family: Georgia, Times New Roman, serif;
-        font-size: 1.25rem;
-      }
-      .main { flex: 1; display: grid; place-items: center; padding: 1rem 1.25rem 3rem; }
-      .prose {
-        width: min(100%, 720px);
-        background: var(--surface);
-        border: 1px solid rgba(184, 151, 90, 0.2);
-        border-radius: 18px;
-        padding: 2rem 1.25rem;
-      }
-      h1 {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        font-family: Georgia, Times New Roman, serif;
-        color: #f0e7d8;
-      }
-      p { color: var(--muted); margin: 0.9rem 0; }
-      .site-footer {
-        padding-top: 0.25rem;
-        padding-bottom: 1.5rem;
-        text-align: center;
-        color: var(--muted);
-        font-size: 0.95rem;
-      }
-      .footer-links {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-bottom: 0.45rem;
-      }
-      .footer-links a { color: var(--accent); text-decoration: none; }
-    </style>
-  </head>
-  <body>
-    <div class="shell">
-      <header class="site-header">
-        <a class="brand" href="index.html">◈ Sage</a>
-      </header>
-      <main class="main">
-        <article class="prose">
-          <h1>Sage — Privacy Policy</h1>
-          <p>Last updated: April 22, 2026</p>
-          <p>Sage is developed and operated by Frank Filius, based in the Netherlands.</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Privacy Policy — Sage</title>
+        <style>
+            :root {
+                --bg: #0f0d0a;
+                --text: #e9e1d3;
+                --muted: #b7aa94;
+                --accent: #b8975a;
+                --surface: #171410;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                background: var(--bg);
+                color: var(--text);
+                font-family:
+                    system-ui,
+                    -apple-system,
+                    Segoe UI,
+                    Roboto,
+                    sans-serif;
+                line-height: 1.65;
+            }
+            .shell {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            .site-header,
+            .site-footer {
+                width: min(100%, 1100px);
+                margin: 0 auto;
+                padding: 1.1rem 1.25rem;
+            }
+            .brand {
+                text-decoration: none;
+                color: var(--accent);
+                font-family:
+                    Georgia,
+                    Times New Roman,
+                    serif;
+                font-size: 1.25rem;
+            }
+            .main {
+                flex: 1;
+                display: grid;
+                place-items: center;
+                padding: 1rem 1.25rem 3rem;
+            }
+            .prose {
+                width: min(100%, 720px);
+                background: var(--surface);
+                border: 1px solid rgba(184, 151, 90, 0.2);
+                border-radius: 18px;
+                padding: 2rem 1.25rem;
+            }
+            h1 {
+                margin-top: 0;
+                margin-bottom: 1rem;
+                font-family:
+                    Georgia,
+                    Times New Roman,
+                    serif;
+                color: #f0e7d8;
+            }
+            p {
+                color: var(--muted);
+                margin: 0.9rem 0;
+            }
+            .site-footer {
+                padding-top: 0.25rem;
+                padding-bottom: 1.5rem;
+                text-align: center;
+                color: var(--muted);
+                font-size: 0.95rem;
+            }
+            .footer-links {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin-bottom: 0.45rem;
+            }
+            .footer-links a {
+                color: var(--accent);
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="shell">
+            <header class="site-header">
+                <a class="brand" href="index.html">◈ Sage</a>
+            </header>
+            <main class="main">
+                <article class="prose">
+                    <h1>Sage — Privacy Policy</h1>
+                    <p>Last updated: April 22, 2026</p>
+                    <p>Sage is developed and operated by Frank Filius, based in the Netherlands.</p>
 
-          <p><strong>What data we collect</strong></p>
-          <p>
-            Sage stores your data locally on your device using AsyncStorage. This includes your saved philosophers,
-            conversation sessions, memory layers, and preferences. This data never leaves your device and is not
-            accessible to us.
-          </p>
-          <p>
-            When you use Sage, your questions and conversation text are sent to Anthropic (anthropic.com) to generate
-            responses. Anthropic processes this data according to their own privacy policy. We do not store your
-            conversation content on our servers.
-          </p>
-          <p>
-            Philosopher profiles are stored in our database (Supabase) as public knowledge content. This data is not
-            personal.
-          </p>
-          <p>
-            If you subscribe to Sage Plus, payment is processed by RevenueCat and the relevant app store (Apple App
-            Store or Google Play). We do not handle or store payment information directly.
-          </p>
+                    <p><strong>What data we collect</strong></p>
+                    <p>
+                        Sage stores your data locally on your device using AsyncStorage. This includes your saved
+                        philosophers, conversation sessions, memory layers, and preferences. This data never leaves your
+                        device and is not accessible to us.
+                    </p>
+                    <p>
+                        When you use Sage, your questions and conversation text are sent to Anthropic (anthropic.com) to
+                        generate responses. Anthropic processes this data according to their own privacy policy. We do
+                        not store your conversation content on our servers.
+                    </p>
+                    <p>
+                        Philosopher profiles are stored in our database (Supabase) as public knowledge content. This
+                        data is not personal.
+                    </p>
+                    <p>
+                        If you subscribe to Sage Plus, payment is processed by RevenueCat and the relevant app store
+                        (Apple App Store or Google Play). We do not handle or store payment information directly.
+                    </p>
 
-          <p><strong>What data we do not collect</strong></p>
-          <p>
-            We do not collect your name, email address, or any identifying information. We do not track your behavior
-            across apps or websites. We do not sell data to third parties.
-          </p>
+                    <p><strong>What data we do not collect</strong></p>
+                    <p>
+                        We do not collect your name, email address, or any identifying information. We do not track your
+                        behavior across apps or websites. We do not sell data to third parties.
+                    </p>
 
-          <p><strong>Data retention</strong></p>
-          <p>
-            Your local data persists until you clear it manually via Settings or uninstall the app. Clearing memories
-            or sessions in Settings is permanent and cannot be undone.
-          </p>
+                    <p><strong>Data retention</strong></p>
+                    <p>
+                        Your local data persists until you clear it manually via Settings or uninstall the app. Clearing
+                        memories or sessions in Settings is permanent and cannot be undone.
+                    </p>
 
-          <p><strong>Your rights under GDPR</strong></p>
-          <p>
-            As a Netherlands-based service, we comply with the General Data Protection Regulation. Since we do not
-            collect personal data on our servers, most GDPR rights apply to data held locally on your device, which
-            you control directly. For any questions or requests, contact us at mail@frankfilius.nl.
-          </p>
+                    <p><strong>Your rights under GDPR</strong></p>
+                    <p>
+                        As a Netherlands-based service, we comply with the General Data Protection Regulation. Since we
+                        do not collect personal data on our servers, most GDPR rights apply to data held locally on your
+                        device, which you control directly. For any questions or requests, contact us at
+                        info@sage-council-app.com.
+                    </p>
 
-          <p><strong>Third party services</strong></p>
-          <p>Anthropic: ai processing — anthropic.com/privacy</p>
-          <p>Supabase: database hosting — supabase.com/privacy</p>
-          <p>RevenueCat: subscription management — revenuecat.com/privacy</p>
-          <p>Apple App Store / Google Play: app distribution and payment</p>
+                    <p><strong>Third party services</strong></p>
+                    <p>Anthropic: ai processing — anthropic.com/privacy</p>
+                    <p>Supabase: database hosting — supabase.com/privacy</p>
+                    <p>RevenueCat: subscription management — revenuecat.com/privacy</p>
+                    <p>Apple App Store / Google Play: app distribution and payment</p>
 
-          <p><strong>Contact</strong></p>
-          <p>Frank Filius</p>
-          <p>mail@frankfilius.nl</p>
-        </article>
-      </main>
-      <footer class="site-footer">
-        <div class="footer-links">
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
+                    <p><strong>Contact</strong></p>
+                    <p>Frank Filius</p>
+                    <p>info@sage-council-app.com</p>
+                </article>
+            </main>
+            <footer class="site-footer">
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+                <div>© 2026 Frank Filius</div>
+            </footer>
         </div>
-        <div>© 2026 Frank Filius</div>
-      </footer>
-    </div>
-  </body>
+    </body>
 </html>
